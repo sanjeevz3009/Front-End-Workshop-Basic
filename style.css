@@ -9,12 +9,37 @@ body {
     margin: 0;
 }
 
+header {
+    position: sticky;
+    top: 0;
+    background-color: #eaeaea;
+}
+
+#skip-link {
+    position: absolute;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+}
+
+#skip-link:focus{
+    margin: 0;
+    width: auto;
+    height: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    background-color: rgb(14, 194, 173);
+    color: white;
+    padding: 10px;
+}
+
 #main, #contact-me {
-    padding: 20px 20px;
+    padding: 20px 50px;
 }
 
 #main-navigation {
     padding: 20px 20px;
+    display: flex;
+    justify-content: center;
 }
 
 #main-navigation a,
@@ -22,11 +47,22 @@ body {
 #contact-me a {
     color: rgb(14, 194, 173);
     text-decoration: none;
+    padding: 10px;
 }
 
 #main-navigation a:hover {
     color: rgb(5, 139, 123);
     font-weight: 380;
+}
+
+#main-navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#main-navigation ul li {
+    display: inline;
 }
 
 #about-paragraph:first-of-type:first-letter {
@@ -57,6 +93,45 @@ input:focus {
 
 figure img {
     border-radius: 5%;
+}
+
+#contact-me {
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+#contact-me h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact-me a {
+    display: block;
+    text-align: center;
+}
+
+#contact-me form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contact-me form div,
+#contact-me form fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-me label {
+    margin-bottom: 5px;
+}
+
+#contact-me input[type="submit"]:hover {
+    background-color: rgb(14, 194, 173);
 }
 
 footer {

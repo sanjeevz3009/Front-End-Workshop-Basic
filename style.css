@@ -138,3 +138,14 @@ footer {
     text-align: center;
     margin-top: 40px;
 }
+
+#profile-pic {
+    float: right;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+    #profile-pic {
+        float: none;
+    }   
+}

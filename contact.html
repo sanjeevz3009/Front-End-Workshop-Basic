@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanj's Website</title>
+</head>
+<body>
+    <header>
+        <!-- <h1>A very beautiful website ;)</h1> -->
+        <nav aria-label="main-navigation">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact Me</a>
+        </nav>
+    </header>
+
+    <section id="contact-me">
+        <h2>Contact Me</h2>
+
+        <a href="mailto:ssrithevan@gmail.com">ssrithevan@gmail.com</a>
+
+        <form action="error.html" method="post" enctype="text/plain">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required aria-required="true">
+            </div>
+            
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+            </div>
+            
+            <div>
+                <label for="occupation">Occupation:</label>
+                <input list="occupations" id="occupation" name="occupation" aria-haspopup="listbox">
+            </div>
+            
+            <div>
+                <datalist id="occupations">
+                    <option value="Developer">
+                    <option value="Analyst">
+                    <option value="Designer">
+                </datalist>
+            </div>
+            
+            <fieldset>
+                <legend>What's the best way to enjoy a potato?</legend>
+                <div>
+                    <input type="radio" id="fries" name="potato" value="French fries">
+                    <label for="fries">French fries</label>
+                </div>
+                <div>
+                    <input type="radio" id="mashed" name="potato" value="Mashed Potatoes">
+                    <label for="mashed">Mashed Potatoes</label>
+                </div>
+    
+                <input type="submit" value="Submit">
+            </fieldset>
+            
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sanj's Website</p>
+    </footer>
+
+</body>
+</html>

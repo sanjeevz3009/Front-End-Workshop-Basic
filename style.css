@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+}
+
+#main, #contact-me {
+    padding: 20px 20px;
+}
+
+#main-navigation {
+    padding: 20px 20px;
+}
+
+#main-navigation a,
+#external-links a,
+#contact-me a {
+    color: rgb(14, 194, 173);
+    text-decoration: none;
+}
+
+#main-navigation a:hover {
+    color: rgb(5, 139, 123);
+    font-weight: 380;
+}
+
+#about-paragraph:first-of-type:first-letter {
+    font-size: 1.5em;
+    color: rgb(14, 194, 173);
+}
+
+input:focus {
+    outline: none; 
+    border: solid 2px rgb(14, 194, 173);
+}
+
+#potato-fieldset input:checked + label {
+    color: rgb(14, 194, 173);
+}
+
+#hero {
+    background: url('hero_pic_3.jpg') center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    width: 100vw;
+}
+
+#hero h1 {
+    font-size: 2em;
+}
+
+figure img {
+    border-radius: 5%;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
